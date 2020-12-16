@@ -10,8 +10,14 @@
   </head>
   <body>
     <div id="app">
+      <h2>{{message_1}}</h2>
       <ul>
         <li v-for="mail in mailList" v-if="mailList.length == 10">{{mail}}</li>
+      </ul>
+      <h2>{{message_2}}</h2>
+      <button type="button" name="button" v-on:click="callMail">PREMI QUI</button>
+      <ul>
+        <li v-for="mail in mailList2" v-if="mailList.length == 10">{{mail}}</li>
       </ul>
     </div>
     <script src="js/myscript.js" charset="utf-8"></script>
